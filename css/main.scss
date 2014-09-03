@@ -1,0 +1,352 @@
+
+@import 'bourbon/bourbon';
+ 
+$default-blue: repeating-linear-gradient(#6f6c90,#b45e68);
+$default-font: proxima-nova,"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
+// .box-shadow-menu {
+//   position: relative;
+//   padding-left: 5px;
+
+// }
+// .box-shadow-menu:before {
+//   content: "";
+//   position: absolute;
+//   left: 603px;
+//   top: 10px;
+//   width: 2em;
+//   height: 0.15em;
+//   background: rgb(214, 211, 211);
+//   box-shadow: 
+//     0 0.25em 0 0 rgb(214, 211, 211),
+//     0 0.5em 0 0 rgb(214, 211, 211);
+// }
+// #background{
+//     background: url('http://www.thekiltwalk.co.uk/main/images/New-York-skyline_0.jpg') no-repeat center fixed;
+//     background-size: cover;
+//     margin: 0;
+//     padding-bottom: 0px;
+//     height: 500px;
+//     width: 100%;
+    
+// }
+
+#developer h3{
+	
+	font-family: arial;
+	color: rgb(214, 211, 211);
+	font-size: 18px;
+	// padding-top:70px;
+	position: relative;
+	left: 0px;
+	// border: 1px solid black;
+	// padding-bottom: 300px;
+	margin-top: 40px;
+	margin-bottom: 300px;
+	// margin-left: 170px;
+}
+#social li{
+	display: inline-block;
+}
+#fb{
+	// bottom: 0;
+	position: absolute;
+	right: 5px;
+	padding-top:4px;
+}
+#twitter{
+	// bottom: 0;
+	position: absolute;
+	right: 40px;
+	padding-top:4px;
+}
+#email{
+	// bottom: 0px;
+	position: absolute;
+	right: 75px;
+	padding-top:4px;
+}
+#home { 
+	width: 100%;
+	height:600px;	
+	@include radial-gradient(#b45e68, #6f6c90);
+@include radial-gradient(#b45e68, #6f6c90, $fallback: red);
+    //background: $default-blue;
+   
+    margin: 0;
+    padding: 0;
+
+ 
+  
+  }
+
+ #header{
+ 	position: relative;
+ 	width: 100%;
+ 	height: 20px;
+ 	
+ } 
+
+ #projects{
+ 	font-family: $default-font;
+ 	display: block;
+ 	position: relative;
+ 	text-align: center;
+ 	font-size: 20px;
+ 	padding-top: 26px;
+ 	line-height: 30px;
+ 	color: rgb(214, 211, 211);
+	// opacity: 0;
+
+ }
+
+ #projects:hover li{
+ 	// display: block;
+
+ }
+#aboutMe, #one, #two, #three{
+	opacity: 0;
+}
+#projects li{
+	display: inline-block;
+	
+	@include transition(all 5s $ease-in-circ);
+}
+
+#main1, #main3{
+	width: 100%;
+	height: 900px;
+	background-color: rgba(255,255,255, 0.3);	
+
+}
+
+
+#main2, #main4{
+	width: 100%;
+	height: 900px;
+	background: rgba(0,0,128,1);
+	// background-color: black;	
+	 opacity: .7;
+	 background: url('http://www.thekiltwalk.co.uk/main/images/New-York-skyline_0.jpg') no-repeat center fixed;
+	 background-size: cover;
+    color: black;
+    position: relative;
+
+// #about{
+// 	display:none;
+}
+.container{
+	background-color: black;
+	height: 700px;
+	overflow: scroll;
+	border-radius: 20px;
+
+}
+img{
+	background-color: black;
+	width: 100%;
+	height: auto;
+	overflow: scroll;
+}
+.rangers  {
+	position: relative;
+	max-height: 6000px;
+	overflow: scroll;
+
+}
+#title{
+	// border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	font-size: 60px;
+	font-family: $default-font;
+	color: rgb(214, 211, 211);
+	padding-top: 200px;
+	text-align: center;
+	@include transition(all 5s $ease-in-circ);
+}
+
+.mainButton{
+	width: 100px;
+	font-family: $default-font;
+	background-color: transparent;
+	border-radius: 30px;
+	height: 30px;
+	border: 1.8px solid rgb(214, 211, 211);
+	color: rgb(214, 211, 211);
+
+}
+
+
+.topLine{
+	position: relative;
+	width: 100%;
+	height: 15%;
+	// border: 1px solid black;
+}
+
+.topLine h3{
+	font-family: $default-font;
+	font-size: 38px;
+	padding-top: 22px;
+	padding-left: 23px;
+
+}
+
+//aboutSection>>>>>>>>>>>>>>>>>>>>>>>
+#AboutP{
+	width: 100%;
+	height: 600px;
+	background-color: rgba(255,255,255, 0.3);
+}
+
+.aboutLeft{
+	position: relative;
+	width: 40%;
+	height: 80%;
+	float: right;
+	// border: 1px solid black;
+	margin-left: 10px;
+}
+.aboutRight{
+	position: relative;
+	width: 40%;
+	height: 80%;
+	float: right;
+	// border: 1px solid black;
+	margin-left: 10px;
+}
+
+.aboutLeft p, .aboutRight p{
+	position: relative;
+	width: 80%;
+	font-family: $default-font;
+	text-align: center;
+	padding-left: 40px;
+	top: 20%;
+	line-height: 25px;
+}
+
+//Project 1>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+.projectLeft{
+	position: relative;
+	width: 40%;
+	height: 50%;
+	float: right;
+	// border: 1px solid black;
+	
+	margin-right: 120px; 
+	background-color: rgba(214, 211, 211, 0.8);
+	border-radius: 20px;
+
+}
+.projectRight{
+	position: relative;
+	width: 40%;
+	height: 80%;
+	float: left;
+	// border: 1px solid black;
+	margin-left: 60px;
+	
+
+
+}
+
+.projectLeft p{
+	position: relative;
+	width: 80%;
+	font-family: $default-font;
+	text-align: center;
+	padding-left: 40px;
+	top: 20%;
+	line-height: 25px;
+}
+
+//Project 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.projectLeft2{
+	
+	position: relative;
+	width: 40%;
+	height: 80%;
+	float: left;
+	// border: 1px solid black;
+	margin-left: 60px;
+}
+.projectRight2{
+
+	position: relative;
+	width: 40%;
+	height: 50%;
+	float: right;
+	// border: 1px solid black;
+	margin-right: 120px;
+	border-radius: 20px;
+
+
+}
+
+.projectLeft2 p{
+	position: relative;
+	width: 80%;
+	font-family: $default-font;
+	text-align: center;
+	padding-left: 40px;
+	top: 20%;
+	line-height: 25px;
+}
+// 
+
+//Project 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.projectLeft3{
+	
+	position: relative;
+	width: 40%;
+	height: 80%;
+	float: left;
+	// border: 1px solid black;
+	margin-left: 60px;
+}
+.projectRight3{
+
+	position: relative;
+	width: 40%;
+	height: 50%;
+	float: right;
+	// border: 1px solid black;
+	margin-right: 120px;
+	border-radius: 20px;
+	background-color: rgba(214, 211, 211, 0.8);
+
+
+}
+
+.projectRight3 p{
+	position: relative;
+	width: 80%;
+	font-family: $default-font;
+	text-align: center;
+	padding-left: 40px;
+	top: 20%;
+	line-height: 25px;
+}
+
+//dsa....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#main2title{
+	font-family: $default-font;
+	font-size: 38px;
+	padding-top: 22px;
+	padding-left: 1050px;
+	color: black;
+	font-weight:bold;
+
+}
+#social{
+	display: inline-block;
+}
+
+
